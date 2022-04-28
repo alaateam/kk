@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3shank Market</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link rel="stylesheet" href="ll.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400&display=swap');
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins' ,sans-serif;
+box-sizing:border-box;
+outline: none;
+color: #fff;;
+}
+
+body{
+display: flex;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to top, rgba(34, 34, 34, 0.5),rgba(0, 0, 0, 0.5)),url(sd.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.container{
+width: 800px;
+background: rgb(0, 0, 0);
+box-shadow: 0 0 0 8px rgba(42, 38, 38, 0.893);
+opacity: 0.6;
+}
+.container form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+    height: 500px;
+}
+form h1{
+    padding: 10px 0;
+}
+form .id{
+    position: relative;
+}
+.id i{
+    position: absolute;
+    font-size: 20px;
+    top:50%;
+    right:20px;
+     transform: translateY(-50%);
+}
+form input{
+    background: #00fff0;
+    width: 100%;
+    height:70px;
+    margin: 4px 0;
+    border: 1px solid #3d3d3d;
+    border-radius: 3px;
+    background: #181817;
+    padding-right: 45px;
+    padding: 0 15px;
+    font-size: 20px;
+   
+}
+
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid #3a3939;
+    border-radius: 3px;
+    background-color: #292927;
+    font-size: 20px;
+    width:100%;
+    margin: 4px 0;
+    margin-left: 210px;
+}
+input[type=submit]{
+    margin-top: 5px;
+    border:none;
+    background: #00fff0;
+    color: rgb(8, 6, 6);
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 210px;
+}
+.awa{
+  margin-top: 5px;
+    border:none;
+    background: #00fff0;
+    color: rgb(8, 6, 6);
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+input[type=text]:focus {
+border: 1px solid #00fff0;
+color: #00fff0;
+transition: all 0.3s ease;
+
+}
+input[type=email]:focus{
+    border: 1px solid #00fff0;
+    color: #00fff0;
+    transition: all 0.3s ease;
+}
+textarea:focus{
+    border: 1px solid #00fff0;
+    color: #00fff0;
+    transition: all 0.3s ease;
+}
+
+form input :focus::placeholder , form textarea :focus::placeholder{
+    padding-left: 4px;
+    color: #00fff0;
+    transition: all 0.3s ease;
+    }
+    input:focus{
+        color: #00fff0;
+        transition: all 0.3s ease;
+    }
+    form input:focus +i {
+        color: #00fff0;
+        transition: all 0.3s ease;
+    }
+    input[type=submit]:hover{
+    background-color: rgb(28, 65, 168);
+    color: rgb(3, 3, 174);
+    letter-spacing: 2px;
+    }
+    .id{
+      width: 380px;
+      margin-left: 210px;
+    }
+    .ty{
+      width: 2oopx;
+      margin-right: 10px;
+    }
+    .trt{
+      width: 320px;
+    }
+    .yy{
+      width: 380px;
+    }
+    .far{
+      margin-left: 210px;
+      padding-left: 100px;
+    }
+    i{
+      margin-left: 210px;
+    }
+    </style>
+     
+
+  </head>
+  <body>
+    <section class="Feedback">
+      <div class="container">
+        <form method="gets">
+          <h1>GIVE YOUR Feedback</h1>
+          <div class="id">
+            <input 
+              type="text"
+              placeholder="Full name"
+              name="fullname"
+              required
+              minlength="8"
+              maxlength="16"
+              checked
+            />
+            <i class="far fa-user"></i>
+          </div>
+          <div class="id">
+            <input
+              type="email"
+              placeholder="Email address"
+              name="email"
+              required
+              minlength="8"
+              maxlength="16"
+            />
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="trt">
+          <textarea class="ty id"
+            cols="15"
+            rows="5"
+            placeholder="Enter your opinion here "
+            name="textarea"
+            required
+            minlength="20"
+            maxlength="100"
+          ></textarea></div>
+          <div class="yy">
+         
+          <a href="F:\thank.html"><input type="submit" value="Submit" /></a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
