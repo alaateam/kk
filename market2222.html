@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=divece, initial-scale=1.0">
+      <title>w3shank Market</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="htpps://fonts.googleapis.com/css?family=Sofia">
+
+        <style>
+        .navbar-brand{
+            font-size: 40px;
+          }
+        .navbar-brand:hover{
+            border-radius: 10%;
+
+        }
+        .nav-link:hover{
+             background-color:orangered;
+             border-radius: 10%;
+        }
+        .dropdown-item:hover{
+            background-color: rgb(31, 228, 163);
+        }
+        .aa img{
+          height: 40%;
+          width: 20px;
+        }
+        .container-fluid{
+        background-color: orangered;
+        }
+        .d-flex{
+          background-color: pink;
+          color: palevioletred;
+        }
+        body{
+          font-family: "Poppins",sans-serif;
+        }
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        h1{
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        h2{
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+        h3{
+          font-size: 1.4rem;
+          font-weight:800 ;
+        }
+        h4{
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+        h5{
+          font-size: 1rem;
+          font-weight: 400;
+          color: #1d1d1d;
+        }
+        h6{
+          color: #080808;
+        }
+        button{
+          font-size: 0.8rem;
+          font-weight: 700;
+          outline: none;
+          border: none;
+          background-color: rgb(26, 22, 23);
+          color: aliceblue;
+          padding: 13px 30px;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        button:hover{
+          background-color:chocolate;
+        }
+        hr{
+          width: 30px;
+          height: 2px;
+          background-color: orangered;
+          color: orangered;
+        }
+        .navbar{
+          font-size: 16px;
+          top: 0;
+          left: 0;
+        }
+        .navbar-light .navbar-nav .nav-link{
+          padding: 0 20px;
+          color: black;
+          transition: 0.3s ease;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar i:hover,
+        .navbar-light .navbar-nav .nav-link .active,
+        .navbar i:active{
+          color:rgb(76, 250, 13);
+        }
+        .navbar i{
+          font-size: 1.2rem;
+          padding: 0 7px;
+          cursor: pointer;
+          font-weight: 500;
+          transition: 0.3s ease;
+        }
+        #home span{
+          color: orangered;
+
+        }
+        #home{
+          background-image: url(F:\lovepik-fashion-girls-with-shopping-bags-picture_501157944.jpg);
+          width: 100%;
+          height: 100vh;
+          background-size: cover;
+          background-position: top 60px center ;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        .navbar-light .navbar-toggler{
+          border: none;
+          outline: none;
+        }
+        @media only screen and (max-width:991px){
+          body > nav > div > button:hover,
+          body > nav > div > button:focus{
+            background-color:orangered;
+          }
+        }
+        #navbarSupportedContent > ul{
+          margin: 1rem;
+          justify-content: flex-end;
+          align-items: flex-end;
+          text-align: right;
+        }
+        #navbarSupportedContent > ul > li:nth-child(n) > a{
+          padding: 10px;
+        }
+        #new .one img{
+           width: 100%;
+           height: 100%;
+           background-position: center center;
+           background-repeat: no-repeat;
+           background-size: cover;
+          position: relative;
+        }
+        #new .one .details{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top:0;
+          left: 0;
+          transition: 0.3s ease;
+        }
+        #new .one:hover .details{
+          cursor: pointer;
+          background-color: rgba(255, 60, 60, 0.548);
+        }
+        #new .one .details button{
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 500;
+          color: rgb(87, 78, 78);
+          background-color:transparent;
+          text-transform: uppercase;
+          border-bottom: 1px solid #2a2a2a;
+          padding: 2.5px;
+          transform: translateY(70px);
+          transition: 0.3s ease;
+        }
+        #new .one .details button:hover{
+          color: white;
+          border-bottom: 1px solid white;
+        }
+        #new .one:nth-child(1) .details{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: flex-start;
+           text-align: start;
+
+        }
+        #new .one:nth-child(2) .details{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+
+        }
+        #new .one:nth-child(3) .details{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: flex-end;
+           text-align: end;
+
+        }
+        .product{
+          cursor: pointer;
+          margin-bottom: 2rem;
+        }
+        .product img{
+          transition: 0.3s all;
+          width: 300px;
+          height: 300px;
+
+        }
+        .product:hover img{
+          opacity: 0.7;
+        }
+        .product .buy-btn{
+          background-color: orangered;
+          transform: translateY(20px);
+          opacity: 0;
+          transition: 0.3s all;
+        }
+        .product:hover .buy-btn{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+        .star i{
+          font-size: 0.8rem;
+          color: rgb(238, 205, 15);
+        }
+        .star{
+          padding: 10px 0;
+        }
+        #banner{
+          background-image: url(F:\merlin_203306904_2a197271-dcc1-49dd-baa2-fc1b1c87d0c8-mobileMasterAt3x.jpg);
+          width: 100%;
+          height: 60vh;
+          background-size: cover;
+          background-position: top 70px center ;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        #banner h4{
+          color: #d8d8d8;
+        }
+        #banner button{
+          background-color: orange;
+        }
+        .slider{
+          width: 100%;
+          height: 100vh;
+            background: url(F:\Lucas-Mutinelli-Vivienne-Westwood-01.jpg);
+          animation: slide 15s infinite;
+        }
+        @keyframes slide{
+          25%{
+            background: url(F:\Lucas-Mutinelli-Vivienne-Westwood-01.jpg);
+          }
+          50%{
+            background: url(F:\merlin_203306904_2a197271-dcc1-49dd-baa2-fc1b1c87d0c8-mobileMasterAt3x.jpg);
+          }
+
+        }
+        .b{
+          color: rgb(255, 254, 254);
+      
+        }
+        .aa{
+          color: orangered;
+        }
+        
+        main {
+             flex: 1 0 auto;
+             }
+             footer {
+                 color: #fff;
+                 background:rgb(104, 102, 102);
+                 position: relative;
+                 font-size: 80%;
+             }
+             .footer-copyright {
+                 width: 100%;
+                 height: 40px;
+                 background: rgb(72, 70, 70);
+                 padding: 10px;
+                 bottom: 0px;
+                 left: 0px;
+             }
+             .footer-body {
+                 margin-bottom: 40px;
+                 padding: 30px;
+             }
+             .footer-body > div:first-child{
+                 font-size: 150%;
+             }
+             .footer-body ul {
+                 list-style-type: none;
+                 margin: 0px;
+                 padding: 0px;
+                 text-align: center;
+             }
+             .footer-body li >a{
+                 color: white;
+                 text-decoration: none;
+                 margin-bottom: 7px;
+             }
+             .g a:hover{
+               color: orangered;
+             }
+              
+             .g a{
+               color: blue;
+             }
+            .alaa:hover{
+            background-color: orangered;
+            }
+           #alaa{
+             background-color: orangered;
+           }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </style>
+        
+    </head>
+    <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+          
+          <img style="height: 100px;" src="F:\تنزيل (1).png">
+          <a  class="navbar-brand" href="#" > W3shank Market</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="F:\Eslam services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="F:\Asmaa hosni.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="F:\Asmaa hosni coooo.html">contact us</a>
+              </li>
+              <li class="nav-item">
+               <a href="F:\amany.html" ><i class="fa fa-search"></i></a>
+               <a href="F:\Eslam my order.html"> <i class="fa fa-shopping-bag"></i></a>
+              </li>
+             
+          </div>
+        </div>
+      </nav>
+      <section  class="slider" id="home">
+        <div class="container">
+          <h5>Fashionable</h5>
+          <h1><span>W3shank</span> Market</h1>
+          <p>w3shank offers you Fashionable clothes for<br>all ages from youngest to oldest</p>
+          <button>Shop Now</button>
+        </div>
+      </section>
+
+      <section id="brand" class="container">
+        <div class="row m-0 py-5"> 
+          <img class="img-fluid col-lg-2 col-md-4 col-6" src="F:\49d7eb8752cd2f12ef82164ac3cb49d6.jpeg" alt="">
+          <img class="img-fluid col-lg-2 col-md-4 col-6" src="F:\givanci1.jpg" alt="">
+          <img class="img-fluid col-lg-2 col-md-4 col-6" src="F:\hqdefault(1).jpg" alt="">
+          <img class="img-fluid col-lg-2 col-md-4 col-6" src="F:\logotipi-izvestnih-brendov-odezhdi-i-obuvi-logotipi-izvestnih-kompanij_2.jpg" alt="">
+          <img class="img-fluid col-lg-2 col-md-4 col-6" src="F:\theoutnetlogo-300x163.jpg" alt="">
+          <img class="img-fluid col-lg-2 col-md-4 col-6" src="F:\a647914ffe5c0270d3cc087e7bb83614.jpg" alt="">
+        </div>
+      </section>
+        <section id="new" class="w-100">
+          <div class="row p-0 m-0">
+            
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+              <img class="img.fluid" src="fashion.jpg"/>
+              <div class="details">
+                <h2>W3shank Market brands</h2>
+                <button class="text-uppercase" style="font-size: 20px;">Shop now</button>
+              </div>
+            </div>
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+              <img class="img.fluid" src="F:\Lucas-Mutinelli-Vivienne-Westwood-01.jpg"/>
+              <div class="details">
+                <h2>W3shank Market offers</h2>
+                <button class="text-uppercase" style="font-size:20px;">Shop now</button>
+              </div>
+            </div>
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+              <img class="img.fluid" src="F:\accessories-header-2000.jpg"/>
+              <div class="details">
+                <h2>W3shank Market 50% off</h2>
+                <button class="text-uppercase" style="font-size:20px;">Shop now</button>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+       <section id="featured" class="my-5 pb-5">
+         <div class="container text-center mt-5 py-5">
+           <h3>Our products</h3>
+           <hr class="mx-auto" style="height: 8px; background-color: orangered;">
+           <p>W3shank market Welcome you in our page</p>
+         </div>
+         <div class="row mx-auto container-fluid" style="background-color: white;">
+           <div class="product text-center col-lg-3 col-md-4 col-12">
+             <img class="img-fluid mb-3" src="F:\61taW4pfSaS._UX500_.jpg"/>
+             <div class="star">
+             <i  class="fa fa-star"></i>
+             <i  class="fa fa-star"></i>
+             <i  class="fa fa-star"></i>
+             <i  class="fa fa-star"></i>
+             <i  class="fa fa-star"></i>
+             </div>
+             <h5 class="p-name">Sport shoes</h5>
+             <h4 class="p-price">$45.00</h4>
+            <a href="F:\cart.html" ><button class="buy-btn">Buy now</button></a>
+           </div>
+
+
+           <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="F:\921da67e465fe93b54f81c70dfe90103c653bc5f_original.jpeg"/>
+            <div class="star">
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Trandy Watch</h5>
+            <h4 class="p-price">$899.00</h4>
+           <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+          </div>
+
+
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="F:\HTB1VWjoa56guuRjy0Fmq6y0DXXa7.jpg"/>
+            <div class="star">
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Fashion t-shirt</h5>
+            <h4 class="p-price">$60.00</h4>
+           <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+          </div>
+
+
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="F:\3D-bag-model_300.jpg"/>
+            <div class="star">
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            <i  class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">feminist bags</h5>
+            <h4 class="p-price">$115.00</h4>
+           <a href="F:\cart.html"> <button class="buy-btn">Buy now</button></a>
+          </div>
+          
+         </div>
+       </section>
+
+        <section id="banner" class="my-5 py-5">
+          <div class="container">
+            <h4>Semester sale</h4>
+            <h1 style="color: white;">Offer 50% for all product & <br> New collection</h1>
+           <a href=""> <button class="text-uppercase" id="alaa">Shop now</button></a>
+          </div>
+        </section>
+        
+        <section id="clothes" class="my-5">
+          <div class="container text-center mt-5 py-5">
+            <h3>Dresses & T-shirts</h3>
+            <hr class="mx-auto" style="height: 8px; background-color: orangered;">
+            <p>W3shank market Welcome you in our page</p>
+          </div>
+          <div class="row mx-auto container-fluid" style="background-color: white;">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="F:\9776f4517f8f96cd10cf4a3783067f21.jpg"/>
+              <div class="star">
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">Old fashion</h5>
+              <h4 class="p-price">$77.00</h4>
+              <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="F:\ZWL121.jpg"/>
+              <div class="star">
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">Trandy t-shirt</h5>
+              <h4 class="p-price">$59.00</h4>
+             <a href="F:\cart.html"> <button class="buy-btn">Buy now</button></a>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="F:\a77c6581d2e889eee182d033462c0163.jpg"/>
+              <div class="star">
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">short dress</h5>
+              <h4 class="p-price">$199.00</h4>
+             <a href="F:\cart.html" ><button class="buy-btn">Buy now</button></a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="F:\876380-800w_f550x668_1523649118.jpg"/>
+              <div class="star">
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              <i  class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">Cool shirt</h5>
+              <h4 class="p-price">$243.00</h4>
+              <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+            </div>
+           </div>
+           </section>
+
+           <section id="watches" class="my-5">
+            <div class="container text-center mt-5 py-5">
+              <h3>Trandy watches</h3>
+              <hr class="mx-auto" style="height: 8px; background-color: orangered;">
+              <p>W3shank market Welcome you in our page</p>
+            </div>
+            <div class="row mx-auto container-fluid" style="background-color: white;">
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="F:\archetype-rogue-automatic-ROG-1177-12L_1800x1800.webp"/>
+                <div class="star">
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Trandy watch</h5>
+                <h4 class="p-price">$18.00</h4>
+                <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+              </div>
+  
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="F:\921da67e465fe93b54f81c70dfe90103c653bc5f_original.jpeg"/>
+                <div class="star">
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Cute watch</h5>
+                <h4 class="p-price">$75.00</h4>
+               <a href="F:\cart.html"> <button class="buy-btn">Buy now</button></a>
+              </div>
+  
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="F:\mdm+LE+MANS+ORANGE+CH+MO+039+06+XL.jpg"/>
+                <div class="star">
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Strong watche</h5>
+                <h4 class="p-price">$17.00</h4>
+               <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="F:\تنزيل.webp"/>
+                <div class="star">
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                <i  class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Black watch</h5>
+                <h4 class="p-price">$23.00</h4>
+               <a href="F:\cart.html" ><button class="buy-btn">Buy now</button></a>
+              </div>
+             </div>
+
+
+             <section id="shoes" class="my-5">
+              <div class="container text-center mt-5 py-5">
+                <h3>Sporty shoes</h3>
+                <hr class="mx-auto" style="height: 8px; background-color: orangered;">
+                <p>W3shank market Welcome you in our page</p>
+              </div>
+              <div class="row mx-auto container-fluid" style="background-color: white;">
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="F:\ABO-Sneakers-21.jpg"/>
+                  <div class="star">
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sporty shoes</h5>
+                  <h4 class="p-price">$18.00</h4>
+                  <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+                </div>
+    
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="F:\2501767fa06324a1bc4f3cb811a002828bd8a6ab.jpg"/>
+                  <div class="star">
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">sporty shoes</h5>
+                  <h4 class="p-price">$35.00</h4>
+                 <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+                </div>
+    
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="F:\ms-1-512-3296442-jpg-500x500.jpg"/>
+                  <div class="star">
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sporty shoes</h5>
+                  <h4 class="p-price">$77.00</h4>
+                  <a href="F:\cart.html"><button class="buy-btn">Buy now</button></a>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="F:\129820_1559931674.jpg"/>
+                  <div class="star">
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sporty shoes</h5>
+                  <h4 class="p-price">$12.00</h4>
+                 <a href="F:\cart.html" ><button class="buy-btn">Buy now</button></a>
+                </div>
+               </div>
+               </section>
+
+               <footer>
+                <div class="footer-body">
+                    <div><span class="aa">W3shank</span> <span style="color: black;">market</span></div>
+                    <div class="b">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum ipsa at. Vel quisquam, placeat architecto magni voluptatibus assumenda sint autem alias cupiditate. Eum sit eaque, nesciunt provident sequi rem if y0u want anything call us.</p>
+                        <ul class="g">
+                            <li><a href="https://youtu.be/7-5Upq2hcOA"> About </a></li>
+                            <li><a href="https://youtu.be/7-5Upq2hcOA"> Contact </a></li>
+                            <li><a href="https://youtu.be/7-5Upq2hcOA"> Terms & Conditions </a></li>
+                            <li><a href="https://youtu.be/7-5Upq2hcOA"> Privacy Policy</a></li>
+                            </ul>
+                            </div>
+                </div>
+                <div class="footer-copyright">
+                    @ Copyright goes here.
+                </div>
+                    </footer>        
+               
+              
+
+
+
+          
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+    </html>
