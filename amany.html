@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=divece, initial-scale=1.0">
+      <title>w3shank Market</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="htpps://fonts.googleapis.com/css?family=Sofia">
+      <link rel="stylesheet" href="style.css">
+<style>
+  body{
+      background-image: url(background2.jpg);
+      background-size:100%;
+      background-repeat: no-repeat;
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      
+      /* Preserve aspet ratio */
+      width: 100%;
+      height: 100%; 
+      backdrop-filter: blur(8px);
+    }
+
+
+    .products{
+      padding: 10px 10px 15px 15px;
+      color :rgb(201, 108, 14);
+      font-family: "Brush Script MT", Trebuchet, sans-serif ;
+      font-size: 70px;
+    }
+
+        
+          
+    .input-icons {
+        
+          width: 70%;
+          border-radius: 25px;
+          width: 70%;
+          display: block;
+          margin:auto;       
+          
+        }
+          
+    #icon {
+      
+      position: absolute;
+            padding: 15px;
+            min-width: 40px;
+        }
+          
+    #input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid rgba(255, 98, 13, 0.841); /* Add a grey border */
+            color:rgb(0, 0, 0);
+            background-image: linear-gradient(rgba(248, 249, 249, 0.895), rgba(208, 202, 194, 0.937));
+            border-radius: 25px;
+            text-indent: 25px;
+            border-radius: 20px;
+            background-color: aqua;
+
+        }
+
+input:focus
+{
+ outline: none;
+}
+
+    .Row {
+      display: table;
+      width: 70%; /*Optional*/
+      table-layout: fixed; /*Optional*/
+      border-spacing: 10px; /*Optional*/
+      margin:5% 15% 5% 15% ;
+      
+    }
+    .Column1 {
+      vertical-align: top; 
+      display: table-cell;
+      background-image: url(m2s.jpg); 
+      background-size:100%;
+      background-repeat: no-repeat;
+      border-radius: 35px 35px;
+      width:360px;
+      height:360px;
+      margin:15px;
+      padding:125px;
+      /*Text style*/
+      font-size: 0px;
+      
+    }
+
+    .Column1:hover{
+      background-image: none;
+      background-color: rgba(255, 255, 255,0.5);
+      font-size: 35px;
+      text-decoration: none;
+      text-align: center;
+      color:rgba(142, 53, 11, 0.959);
+      font-family: serif;
+      /*'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+
+    }
+
+    .Column2 {
+      vertical-align: top; 
+      display: table-cell;
+      background-image: url(shoesss.jpg);
+      
+      background-size:100%;
+
+      background-repeat: no-repeat;
+      border-radius: 35px 35px;
+      width:360px;
+      height:360px;
+      margin:15px;
+      padding:125px;
+      /*Text style*/
+      font-size: 0px;   
+       
+
+      
+
+    }
+
+    a.Column2:hover{
+      background-image:none;
+      background-color: rgba(255, 255, 255,0.5);
+      font-size: 35px;
+      text-decoration: none;
+      text-align: center;
+      color:rgba(142, 53, 11, 0.959);
+      font-family: serif;
+      /*'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif*/;
+
+    }
+
+    .Column3 {
+      vertical-align: top; 
+      display: table-cell;
+      background-image: url(accessories.jpg); 
+      background-size:100%;
+      background-repeat: no-repeat;
+      border-radius: 35px 35px;
+      width:360px;
+      height:360px;
+      margin:15px;
+      padding:125px;
+      /*Text style*/
+      font-size: 0px;
+
+    }
+    a.Column3:hover{
+      background-image:none;
+      background-color: rgba(255, 255, 255,.5);
+      font-size: 35px;
+      text-decoration:none;
+      text-align:center;
+      color:rgba(142, 53, 11, 0.959);
+      font-family: serif;
+      /*'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif*/;
+      
+
+    }
+
+
+
+    #myUL{
+
+      font-size: 18px;
+      padding:5px;
+
+      text-align: center;
+      text-decoration: none;
+
+      width: 70%;
+      border-radius: 0 0 25px 25px;
+      width: 70%;
+      display: block;
+      margin:auto;    
+      display: none;
+
+    }
+    ul li{
+      background:rgba(187, 187, 176, 0.664);
+      margin: 2px;
+
+
+    }
+    ul li a{
+      color: rgba(205, 77, 13, 0.978);
+      text-decoration: none;
+    }
+          
+    UL li a:hover:not(.header) {
+        color: rgba(241, 73, 13, 0.814); /* Add a hover effect to all links, except for headers */
+        opacity: .7;
+      } 
+
+      </style>
+      <script>
+        function myFunction() {
+var input, filter, ul, li, a, i, txtValue;
+input = document.getElementById("input-field");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myUL");
+li = ul.getElementsByTagName("li");
+
+// If we've got more than 1 char in <input>, show it, otherwise, hide
+const inputDisplay = input.value.length > 0 ? 'block' : 'none';
+ul.style.display = inputDisplay;
+
+for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+    } 
+    else {
+        li[i].style.display = "none";
+    }
+  }
+}
+  
+      </script>
+
+    </head>
+
+    <body>
+       <h2 class="products">
+            Products
+        </h2>
+    <div class="input-icons">
+    
+      <i id="icon" class="fa fa-search" aria-hidden="true"></i>  
+        <input id="input-field" type="text" onkeyup="myFunction()" placeholder="Search for products..">
+
+
+    
+    </div>
+
+    <ul id="myUL"type="none">
+    <li><a href="shuffle4.html">clothes</a></li>
+    <li><a href="shuffle4.html">Shoes</a></li>
+    <li><a href="shuffle4.html">accessories</a></li>
+    </ul>
+
+
+    <div class ="Row">
+    <a href="#"class ="Column1">Clothes</a>
+    <a href="#"class ="Column2">Shoes</a>
+    <a href="#"class ="Column3">accessories</a>
+  </div>
+        
+    </body>
+</html>
