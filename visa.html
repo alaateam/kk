@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3shank market</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+      }
+      body {
+        background: var(--primary-color);
+      }
+      #icon {
+        float: right;
+        margin: 10px;
+        width: 30px;
+        cursor: pointer;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        min-height: 100vh;
+      }
+
+      .container form {
+        padding: 20px;
+        width: 700px;
+        background: burlywood;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        color: var(--primary-color);
+      }
+
+      .container form .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .container form .row .col {
+        flex: 1 1 250px;
+      }
+
+      .container form .row .col .title {
+        font-size: 20px;
+        color: var(--primary-color);
+        padding-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      .container form .row .col .inputBox {
+        margin: 10px 0;
+      }
+
+      .container form .row .col .inputBox span {
+        margin-bottom: 5px;
+        display: block;
+      }
+      .container form .row .col .inputBox input {
+        border-radius: 3px;
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 15px;
+        text-transform: none;
+        border-radius: 10px;
+        background-color: var(--primary-color);
+      }
+      .container form .row .col .inputBox input:focus {
+        border: 1px solid rgb(226, 43, 186);
+        color: rgb(226, 43, 202);
+        background-color: burlywood;
+        font-size: 20px;
+      }
+      .container form .row .col.flex {
+        display: flex;
+        gap: 15px;
+      }
+      .container form .row .col .inputBox.img {
+        height: 34px;
+        margin-top: 5px;
+        filter: drop-shadow(0 0 1px #000);
+      }
+      .container form .submit-btn {
+        width: 100%;
+        padding: 7px;
+        font-size: 17px;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .container form .submit-btn:hover {
+        background-color: blue;
+        color: red;
+        opacity: 0.7;
+        letter-spacing: 4px;
+      }
+      .container form .submit-btn:focus {
+        background-color: rgb(255, 0, 51);
+        color: red;
+        opacity: 0.7;
+        letter-spacing: 4px;
+      }
+      :root {
+        --primary-color: white;
+        --secondary-color: #1b1b1b;
+      }
+      .dark-theme {
+        --primary-color: #1b1b1b;
+        --secondary-color: white;
+      }
+      .o {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/kk/moon.png" id="icon" />
+    <div class="container">
+      <form method="post" id="ss" action="ref.html">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">address of billing</h3>
+            <div class="inputBox">
+              <span>full name :</span>
+              <input
+                type="text"
+                id="text1"
+                placeholder="ehab nasr"
+                minlength="8"
+                maxlength="15"
+                name="Fullname"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <div class="o"></div>
+              <span>email :</span>
+              <input
+                type="email"
+                placeholder="example@.."
+                id="email1"
+                name="Email"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <span>address :</span>
+              <input
+                type="text"
+                placeholder=" no of street -area"
+                id="ad1"
+                name="Address"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <span>city :</span>
+              <input
+                type="text"
+                placeholder="cairo"
+                minlength="8"
+                maxlength="15"
+                id="city1"
+                name="City"
+                required
+              />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>state :</span>
+                <input
+                  type="text"
+                  placeholder="egypt"
+                  minlength="8"
+                  maxlength="15"
+                  id="state1"
+                  name="State"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <span>zip code :</span>
+                <input type="text" placeholder="5745" id="zip1" name="ZIPcode" required />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="title">payment</h3>
+            <div class="inputBox">
+              <span>cards accepted :</span>
+              <img src="card_img.png" alt=" card accepted" />
+            </div>
+            <div class="inputBox">
+              <span>name on card :</span>
+
+              <input
+                type="text"
+                placeholder=" ehab nasr"
+                minlength="8"
+                maxlength="15"
+                id="nc"
+                name="NameOnCard"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <span>credit card number :</span>
+              <input
+                type="text"
+                placeholder="5554-6767-7877"
+                id="ccn"
+                name="CreditCardNumber"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <span>exp month :</span>
+              <input type="text" placeholder="january" id="exp" name="EXPMonth" required />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>exp year :</span>
+                <input type="text" placeholder="2024" id="exp1" name="EXPYear" required />
+              </div>
+              <div class="inputBox">
+                <span>CVV :</span>
+                <input type="text" placeholder="1234" id="cvv1" name="CVV" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="submit-btn" onclick="validation()">checkout</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "/kk/sun.png";
+      } else {
+        icon.src = "/kk/moon.png";
+      }
+    };
+    function validation() {
+      if (document.getElementById("text1").value == "") {
+        alert("enter the full name");
+      } else if (document.getElementById("email1").value == "") {
+        alert("enter the email");
+      } else if (document.getElementById("ad1").value == "") {
+        alert("enter the addresss");
+      } else if (document.getElementById("city1").value == "") {
+        alert("enter the city");
+      } else if (document.getElementById("state1").value == "") {
+        alert("enter the state");
+      } else if (document.getElementById("zip1").value == "") {
+        alert("enter the zip code");
+      } else if (document.getElementById("nc").value == "") {
+        alert("enter the  name of card");
+      } else if (document.getElementById("ccn").value == "") {
+        alert("enter the credit card number");
+      } else if (document.getElementById("exp").value == "") {
+        alert("enter the exp month");
+      } else if (document.getElementById("exp1").value == "") {
+        alert("enter the exp year");
+      } else if (document.getElementById("cvv1").value == "") {
+        alert("enter the cvv");
+      }
+    }
+  </script>
+</html>
