@@ -11,12 +11,12 @@ body
 :root
 {
     --primary-color: white;
-    --secondary-color: black;
+    --secondary-color: #1b1b1b;
     --shadow: rgba(0, 0, 0, 0.200);
 }
 .dark-theme
 {
-    --primary-color: black;
+    --primary-color: #1b1b1b;
     --secondary-color: white;
     --shadow: rgba(255, 255, 255, 0.200);
 }
