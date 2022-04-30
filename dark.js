@@ -29,10 +29,10 @@ icon.onclick = function()
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme"))
     {
-        icon.src = "/kk/sun.png";
+        icon.src = "kk/sun.png";
     }
     else
     {
-        icon.src = "/kk/moon.png";
+        icon.src = "kk/moon.png";
     }
 }
