@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3shank Market</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link rel="stylesheet" href="/kk/feedb.css" />
+  </head>
+  <body>
+    <img src="/kk/moon.png" id="icon" />
+    <section class="Feedback">
+      <div class="collect">
+        <form method="post" action="ehab.html">
+          <h1>GIVE YOUR Feedback</h1>
+          <div class="id">
+            <input
+              type="text"
+              placeholder="Full name"
+              name="fullname"
+              required
+              minlength="8"
+              maxlength="16"
+              checked
+              id="text1"
+            />
+            <i class="far fa-user"></i>
+          </div>
+          <div class="id">
+            <input
+              id="email1"
+              type="email"
+              placeholder="Email address"
+              name="email"
+              required
+              minlength="8"
+              maxlength="16"
+            />
+            <i class="far fa-envelope"></i>
+          </div>
+          <textarea
+            cols="15"
+            rows="5"
+            placeholder="Enter your opinion here "
+            name="textarea"
+            required
+            minlength="20"
+            maxlength="100"
+            id="texta"
+          ></textarea>
+          <button onclick="validation()">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "/kk/sun.png";
+        } else {
+          icon.src = "/kk/moon.png";
+        }
+      };
+      function validation() {
+        if (document.getElementById("text1").value == "") {
+          alert("enter the full name");
+        } else if (document.getElementById("email1").value == "") {
+          alert("enter the email");
+        } else if (document.getElementById("texta").value == "") {
+          alert("enter the feedback");
+        }
+      }
+    </script>
+  </body>
+</html>

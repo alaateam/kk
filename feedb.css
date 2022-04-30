@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400&display=swap');
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins' ,sans-serif;
+box-sizing: border-box;
+outline: none;
+color: rgb(172, 51, 51);;
+}
+
+body{
+background-color: var(--primary-color);
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+}
+:root{
+    --primary-color: white;
+    --secondary-color: #1b1b1b;
+}
+.dark-theme{
+    --primary-color: #1b1b1b;
+    --secondary-color: white;
+}
+#icon{
+    float: right;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: -85px;
+}
+.collect{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+width: 460px;
+background: var(--secondary-color);
+box-shadow: 0 0 0 8px var(--primary-color);
+opacity: 0.6;
+}
+.collect form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+form h1{
+    padding: 10px 0;
+}
+form .id{
+    position: relative;
+}
+.id i{
+    position: absolute;
+    font-size: 20px;
+    top:50%;
+    right:20px;
+     transform: translateY(-50%);
+}
+form input{
+    background: #00fff0;
+    color:#00fff0 ;
+    width: 100%;
+    height:50px;
+    margin: 4px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    background: #181817;
+    padding-right: 45px;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    background-color: #181817;
+    font-size: 20px;
+    width:100%;
+    margin: 4px 0;
+}
+button{
+    margin-top: 5px;
+    border:none;
+    background: #00fff0;
+    color: #222;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+input[type=text] :focus {
+border: 1px solid #00fff0;
+color: #00fff0;
+transition: all 0.3s ease;
+
+}
+input[type=email]:focus{
+    border: 1px solid #00fff0;
+    color: #00fff0;
+    transition: all 0.3s ease;
+}
+form input :focus::placeholder , form textarea :focus::placeholder{
+    padding-left: 4px;
+    color: #00fff0;
+    transition: all 0.3s ease;
+    }
+    textarea:focus{
+        border: 1px solid #00fff0;
+        color: #00fff0;
+        transition: all 0.3s ease;
+    }
+    form input:focus +i {
+        color: #00fff0;
+        transition: all 0.3s ease;
+    }
+    button:hover{
+        background-color: rgb(28, 65, 168);
+        color: darkblue;
+        letter-spacing: 2px;
+    }
