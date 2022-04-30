@@ -1,0 +1,60 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+:root
+{
+    --primary-color: white;
+    --secondary-color: black;
+}
+.dark-theme
+{
+    --primary-color: black;
+    --secondary-color: white;
+}
+#icon
+{
+    float: right;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: -30px;
+}
+body
+{
+    background-color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+.service hr
+{
+    background-color: var(--secondary-color);
+}
+.service
+{
+    display: flex;
+    margin-top: 50px;
+}
+.FreeShipping
+{
+    width: 50%;
+    padding-left: 5%;
+}
+.FreeShipping h3
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.FreeShipping p
+{
+    padding: 10px 0;
+    color: var(--secondary-color);
+}
+.FreeShipping img
+{
+    width: 100%;
+}

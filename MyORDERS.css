@@ -1,0 +1,110 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+:root
+{
+    --primary-color: white;
+    --secondary-color: black;
+}
+.dark-theme
+{
+    --primary-color: black;
+    --secondary-color: white;
+}
+#icon
+{
+    float: right;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+body
+{
+    background-color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+.my-orders
+{
+    max-width: 1000px;
+    margin: 10px auto;
+}
+i
+{
+    margin: 0 50%;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.my-orders h2
+{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;   
+}
+.order-row 
+{
+    display: flex;
+}
+.order-item 
+{
+    width: 45%;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+.order-price 
+{
+    width: 30%;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+.order-status 
+{
+    width: 30%;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+.order-header 
+{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: var(--secondary-color);
+}
+.order-column 
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--secondary-color);
+    margin: 10px 1.5em 0 1.5em;
+    padding-bottom: 10px;
+}
+.order-item-title 
+{
+    color: var(--secondary-color);
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.order-item-image 
+{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.button 
+{
+    background-color: orange;
+    color: var(--primary-color);
+    border-radius: 10px;
+    margin-left: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+.button:hover
+{
+    background-color: rgb(255, 150, 0);
+}

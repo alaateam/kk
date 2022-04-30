@@ -1,0 +1,94 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+}
+:root
+{
+    --primary-color: white;
+    --secondary-color: black;
+    --shadow: rgba(0, 0, 0, 0.200);
+}
+.dark-theme
+{
+    --primary-color: black;
+    --secondary-color: white;
+    --shadow: rgba(255, 255, 255, 0.200);
+}
+#icon
+{
+    float: right;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+#services
+{
+    display: flex;
+}
+.services
+{
+    width: 1170px;
+    margin: 5% auto;
+}
+.services h2
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    padding-bottom: 70px;
+}
+.service 
+{
+    position: relative;
+    width: 31%;
+    height: 300px;
+    background: var(--primary-color);
+    border-radius: 10%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    overflow: hidden;
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+.service h3 
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    padding-bottom: 50px;
+}
+.service p
+{
+    color: var(--secondary-color);
+    font-size: 12.5px;
+}
+.service:hover
+{
+    box-shadow: 0 30px 35px var(--shadow);
+    background-color: rgba(255, 166, 0, 0.719);
+}
+.circle
+{
+    width: 60px;
+    height: 60px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    margin: 3% auto;
+}
+.circle i 
+{
+    font-size: 30px;
+    padding-top: 15px;
+    color: var(--primary-color);
+}
