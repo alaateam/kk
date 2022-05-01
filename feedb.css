@@ -92,7 +92,7 @@ button{
     cursor: pointer;
     border-radius: 3px;
 }
-input[type=text] :focus {
+input[type=text]:focus {
 border: 1px solid #00fff0;
 color: #00fff0;
 transition: all 0.3s ease;
@@ -103,7 +103,7 @@ input[type=email]:focus{
     color: #00fff0;
     transition: all 0.3s ease;
 }
-form input :focus::placeholder , form textarea :focus::placeholder{
+form input:focus::placeholder , form textarea:focus::placeholder{
     padding-left: 4px;
     color: #00fff0;
     transition: all 0.3s ease;
