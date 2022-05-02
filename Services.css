@@ -136,7 +136,8 @@ body
 .header i
 {
     margin-top: 35px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
     cursor: pointer;
 }
 .header i:hover
