@@ -7,11 +7,11 @@
 :root
 {
     --primary-color: white;
-    --secondary-color: black;
+    --secondary-color: #1b1b1b;
 }
 .dark-theme
 {
-    --primary-color: black;
+    --primary-color: #1b1b1b;
     --secondary-color: white;
 }
 #icon
@@ -20,6 +20,7 @@
     margin: 10px;
     width: 30px;
     cursor: pointer;
+    margin-top: 28px;
 }
 body
 {
@@ -31,7 +32,7 @@ body
     max-width: 1000px;
     margin: 10px auto;
 }
-i
+.my-orders i
 {
     margin: 0 50%;
     color: var(--secondary-color);
@@ -108,4 +109,58 @@ i
 .button:hover
 {
     background-color: rgb(255, 150, 0);
+}
+.header 
+{
+    overflow: hidden;
+    background-color: #f8f9fa;
+    padding: 20px 10px;
+}
+.header a 
+{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.header a.logo 
+{
+    font-size: 40px;
+    margin-top: 20px;
+    color: rgba(0,0,0,.9);
+
+}
+.header a.head-right 
+{
+    margin-top: 20px;
+}
+.header a.head-right:hover 
+{
+    background-color: orangered;
+    color: rgb(76, 250, 13);
+}
+.header #logo
+{
+    width: 100px;
+    float: left;
+}
+.header i
+{
+    margin-top: 35px;
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header i:hover
+{
+    color: rgb(76, 250, 13);
+}
+.header-right 
+{
+    float: right;
 }
