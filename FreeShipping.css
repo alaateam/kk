@@ -2,17 +2,71 @@
 {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
     transition: all 0.2s linear;
 }
 :root
 {
     --primary-color: white;
-    --secondary-color: black;
+    --secondary-color: #1b1b1b;
 }
 .dark-theme
 {
-    --primary-color: black;
+    --primary-color: #1b1b1b;
     --secondary-color: white;
+}
+.header 
+{
+    overflow: hidden;
+    background-color: #f8f9fa;
+    padding: 20px 10px;
+}
+.header a 
+{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.header a.logo 
+{
+    font-size: 40px;
+    margin-top: 20px;
+    color: rgba(0,0,0,.9);
+
+}
+.header a.head-right 
+{
+    margin-top: 20px;
+}
+.header a.head-right:hover 
+{
+    background-color: orangered;
+    color: rgb(76, 250, 13);
+}
+.header #logo
+{
+    width: 100px;
+    float: left;
+}
+.header i
+{
+    margin-top: 35px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.header i:hover
+{
+    color: rgb(76, 250, 13);
+}
+.header-right 
+{
+    float: right;
 }
 #icon
 {
@@ -20,7 +74,7 @@
     margin: 10px;
     width: 30px;
     cursor: pointer;
-    margin-top: -30px;
+    margin-top: 28px;
 }
 body
 {
@@ -56,6 +110,29 @@ body
     color: var(--secondary-color);
 }
 .FreeShipping img
+{
+    width: 100%;
+}
+.Refund
+{
+    width: 50%;
+    padding-left: 5%;
+}
+.Refund h3
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.Refund p
+{
+    color: var(--secondary-color);
+    padding: 10px 0;
+}
+.Refund img
 {
     width: 100%;
 }
