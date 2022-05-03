@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>w3shank Market</title>
     <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
-    <link rel="stylesheet" href="/kk/feedb.css" />
+    <link rel="stylesheet" href="feedb.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
-    <img src="/kk/moon.png" id="icon" />
+    <div class="header">
+      <img src="ima.png" id="logo" style="float: left" />
+      <a href="/kk/market edit.html" class="logo">w3shank market</a>
+      <div class="header-right">
+        <a href="/kk/market edit.html" class="head-right">Home</a>
+        <a href="/kk/alaa hamdi track2.html" class="head-right">Track</a>
+        <a href="/kk/Asmaa hosni.html" class="head-right">About us</a>
+        <a href="/kk/Asmaa hosni coooo.html" class="head-right">Contact us</a>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-shopping-bag"></i>
+        <img src="moon.png" id="icon" />
+      </div>
+    </div>
+
     <section class="Feedback">
       <div class="collect">
         <form action="/kk/ehab.html" method="get">
@@ -19,7 +36,6 @@
               type="text"
               placeholder="Full name"
               name="fullname"
-              required
               minlength="8"
               maxlength="16"
               checked
@@ -33,7 +49,6 @@
               type="email"
               placeholder="Email address"
               name="email"
-              required
               minlength="8"
               maxlength="16"
             />
@@ -44,15 +59,41 @@
             rows="5"
             placeholder="Enter your opinion here "
             name="textarea"
-            required
             minlength="20"
             maxlength="100"
             id="texta"
           ></textarea>
-               <button onclick="validation()">Submit</button>
+          <button onclick="validation(event)">Submit</button>
         </form>
       </div>
     </section>
+    <footer>
+      <div class="footer-body">
+        <div>
+          <span class="aa">W3shank</span>
+          <span style="color: black">market</span>
+        </div>
+        <div class="b">
+          <p style="color: white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            voluptatum ipsa at. Vel quisquam, placeat architecto magni
+            voluptatibus assumenda sint autem alias cupiditate. Eum sit eaque,
+            nesciunt provident sequi rem if y0u want anything call us.
+          </p>
+          <ul class="g">
+            <li><a> About </a></li>
+            <li><a> Contact </a></li>
+            <li>
+              <a> Terms & Conditions </a>
+            </li>
+            <li><a> Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright" style="color: white">
+        @ Copyright goes here.
+      </div>
+    </footer>
 
     <script>
       var icon = document.getElementById("icon");
@@ -64,13 +105,19 @@
           icon.src = "/kk/moon.png";
         }
       };
-      function validation() {
-        if (document.getElementById("text1").value == "") {
+      function validation(event) {
+        var a = document.getElementById("text1");
+        var b = document.getElementById("email1");
+        var c = document.getElementById("texta");
+        if (a.value === "") {
           alert("enter the full name");
-        } else if (document.getElementById("email1").value == "") {
+        } else if (b.value === "") {
           alert("enter the email");
-        } else if (document.getElementById("texta").value == "") {
+        } else if (c.value === "") {
           alert("enter the feedback");
+        }
+        if (a.value === "" && b.value === "" && c.value === "") {
+          event.preventDefault();
         }
       }
     </script>

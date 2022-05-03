@@ -5,24 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/kk/ehab.css" />
+    <link rel="stylesheet" href="ehab.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="o">
-      <img src="/kk/moon.png" id="icon" />
+    <div class="header">
+      <img src="ima.png" id="logo" style="float: left" />
+      <a href="/kk/market edit.html" class="logo">w3shank market</a>
+      <div class="header-right">
+        <a href="/kk/market edit.html" class="head-right">Home</a>
+        <a href="/kk/alaa hamdi track2.html" class="head-right">Track</a>
+        <a href="/kk/Asmaa hosni.html" class="head-right">About us</a>
+        <a href="/kk/Asmaa hosni coooo.html" class="head-right">Contact us</a>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-shopping-bag"></i>
+        <img src="moon.png" id="icon" />
+      </div>
     </div>
     <div class="s">
       thank you for feedback
-      <a href="/kk/market edit.html">home</a>
+      <a href="#" class="n">home</a>
     </div>
+    <footer>
+      <div class="footer-body">
+        <div>
+          <span class="aa">W3shank</span>
+          <span style="color: black">market</span>
+        </div>
+        <div class="b">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            voluptatum ipsa at. Vel quisquam, placeat architecto magni
+            voluptatibus assumenda sint autem alias cupiditate. Eum sit eaque,
+            nesciunt provident sequi rem if y0u want anything call us.
+          </p>
+          <ul class="g">
+            <li><a class="aw"> About </a></li>
+            <li><a class="aw"> Contact </a></li>
+            <li>
+              <a class="aw"> Terms & Conditions </a>
+            </li>
+            <li><a class="aw"> Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright" style="color: white">
+        @ Copyright goes here.
+      </div>
+    </footer>
     <script>
       var icon = document.getElementById("icon");
       icon.onclick = function () {
         document.body.classList.toggle("dark-theme");
         if (document.body.classList.contains("dark-theme")) {
-          icon.src = "/kk/sun.png";
+          icon.src = "sun.png";
         } else {
-          icon.src = "/kk/moon.png";
+          icon.src = "moon.png";
         }
       };
     </script>

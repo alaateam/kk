@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>w3shank market</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
@@ -26,6 +34,7 @@
         margin: 10px;
         width: 30px;
         cursor: pointer;
+        margin-top: 27px;
       }
 
       .container {
@@ -110,12 +119,12 @@
         opacity: 0.7;
         letter-spacing: 4px;
       }
-      .container form .submit-btn:focus {
+      /* .container form .submit-btn:focus {
         background-color: rgb(255, 0, 51);
         color: red;
         opacity: 0.7;
         letter-spacing: 4px;
-      }
+      } */
       :root {
         --primary-color: white;
         --secondary-color: #1b1b1b;
@@ -127,12 +136,109 @@
       .o {
         margin-bottom: 20px;
       }
+      .header {
+        overflow: hidden;
+        background-color: #f8f9fa;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: var(--secondary-color);
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 25px;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .header a.logo {
+        font-size: 40px;
+        margin-top: 20px;
+
+        color: rgba(0, 0, 0, 0.9);
+      }
+      .header a.head-right {
+        margin-top: 20px;
+      }
+      .header a.head-right:hover {
+        background-color: orangered;
+        color: rgb(76, 250, 13);
+      }
+      .header #logo {
+        width: 100px;
+      }
+      .header i {
+        margin-top: 35px;
+        margin-right: 15px;
+        cursor: pointer;
+        color: black;
+      }
+      .header i:hover {
+        color: rgb(76, 250, 13);
+      }
+
+      .header-right {
+        float: right;
+      }
+      footer {
+        color: #fff;
+        background: rgb(104, 102, 102);
+        margin-bottom: 0;
+        font-size: 80%;
+      }
+      .footer-copyright {
+        width: 100%;
+        height: 40px;
+        background: rgb(72, 70, 70);
+        padding: 10px;
+        bottom: 0px;
+        left: 0px;
+      }
+      .footer-body {
+        padding: 30px;
+      }
+      .footer-body > div:first-child {
+        font-size: 150%;
+      }
+      .footer-body ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+      }
+      .footer-body li > a {
+        color: var(--primary-color);
+        text-decoration: none;
+        margin-bottom: 7px;
+      }
+      .aa {
+        color: orangered;
+      }
+      li a:hover {
+        color: orangered;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
-    <img src="/kk/moon.png" id="icon" />
+    <div class="header">
+      <img src="ima.png" id="logo" style="float: left" />
+      <a href="/kk/market edit.html" class="logo">w3shank market</a>
+      <div class="header-right">
+        <a href="/kk/market edit.html" class="head-right">Home</a>
+        <a href="/kk/alaa hamdi track2.html" class="head-right">Track</a>
+        <a href="/kk/Asmaa hosni.html" class="head-right">About us</a>
+        <a href="/kk/Asmaa hosni coooo.html" class="head-right">Contact us</a>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-shopping-bag"></i>
+        <img src="/kk/moon.png" id="icon" />
+      </div>
+    </div>
+
     <div class="container">
-      <form method="get" id="ss" action="/kk/ref.html">
+      <form method="get" id="ss" action="ref.html">
         <div class="row">
           <div class="col">
             <h3 class="title">address of billing</h3>
@@ -196,7 +302,13 @@
               </div>
               <div class="inputBox">
                 <span>zip code :</span>
-                <input type="text" placeholder="5745" id="zip1" name="ZIPcode" required />
+                <input
+                  type="text"
+                  placeholder="5745"
+                  id="zip1"
+                  name="ZIPcode"
+                  required
+                />
               </div>
             </div>
           </div>
@@ -204,7 +316,7 @@
             <h3 class="title">payment</h3>
             <div class="inputBox">
               <span>cards accepted :</span>
-              <img src="/kk/cards.jpeg" alt=" card accepted" />
+              <img src="card_img.png" alt=" card accepted" />
             </div>
             <div class="inputBox">
               <span>name on card :</span>
@@ -231,23 +343,68 @@
             </div>
             <div class="inputBox">
               <span>exp month :</span>
-              <input type="text" placeholder="january" id="exp" name="EXPMonth" required />
+              <input
+                type="text"
+                placeholder="january"
+                id="exp"
+                name="EXPMonth"
+                required
+              />
             </div>
             <div class="flex">
               <div class="inputBox">
                 <span>exp year :</span>
-                <input type="text" placeholder="2024" id="exp1" name="EXPYear" required />
+                <input
+                  type="text"
+                  placeholder="2024"
+                  id="exp1"
+                  name="EXPYear"
+                  required
+                />
               </div>
               <div class="inputBox">
                 <span>CVV :</span>
-                <input type="text" placeholder="1234" id="cvv1" name="CVV" required />
+                <input
+                  type="text"
+                  placeholder="1234"
+                  id="cvv1"
+                  name="CVV"
+                  required
+                />
               </div>
             </div>
           </div>
         </div>
-        <button class="submit-btn" onclick="validation()">checkout</button>
+        <button class="submit-btn" onclick="validation(event)">checkout</button>
       </form>
     </div>
+    <footer>
+      <div class="footer-body">
+        <div>
+          <span class="aa">W3shank</span>
+          <span style="color: black">market</span>
+        </div>
+        <div class="b">
+          <p style="color: white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            voluptatum ipsa at. Vel quisquam, placeat architecto magni
+            voluptatibus assumenda sint autem alias cupiditate. Eum sit eaque,
+            nesciunt provident sequi rem if y0u want anything call us.
+          </p>
+          <ul class="g">
+            <li><a> About </a></li>
+            <li><a> Contact </a></li>
+            <li>
+              <a> Terms & Conditions </a>
+            </li>
+            <li><a> Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright" style="color: white">
+        @ Copyright goes here.
+      </div>
+    </footer>
   </body>
   <script>
     var icon = document.getElementById("icon");
@@ -259,29 +416,40 @@
         icon.src = "/kk/moon.png";
       }
     };
-    function validation() {
+    function validation(event) {
       if (document.getElementById("text1").value == "") {
         alert("enter the full name");
+        event.preventDefault();
       } else if (document.getElementById("email1").value == "") {
         alert("enter the email");
+        event.preventDefault();
       } else if (document.getElementById("ad1").value == "") {
         alert("enter the addresss");
+        event.preventDefault();
       } else if (document.getElementById("city1").value == "") {
         alert("enter the city");
+        event.preventDefault();
       } else if (document.getElementById("state1").value == "") {
         alert("enter the state");
+        event.preventDefault();
       } else if (document.getElementById("zip1").value == "") {
         alert("enter the zip code");
+        event.preventDefault();
       } else if (document.getElementById("nc").value == "") {
         alert("enter the  name of card");
+        event.preventDefault();
       } else if (document.getElementById("ccn").value == "") {
         alert("enter the credit card number");
+        event.preventDefault();
       } else if (document.getElementById("exp").value == "") {
         alert("enter the exp month");
+        event.preventDefault();
       } else if (document.getElementById("exp1").value == "") {
         alert("enter the exp year");
+        event.preventDefault();
       } else if (document.getElementById("cvv1").value == "") {
         alert("enter the cvv");
+        event.preventDefault();
       }
     }
   </script>

@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400&display=swap');
 *{
     transition: all 0.2s linear;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: var(--primary-color);
+    font-family:"poppins" ,"sans--serif";
 }
 .s{
     display: flex;
     justify-content: center;
     /* align-items: center; */
     border: 5px solid var(--secondary-color);
-    margin-top: 16%;
+    margin-top: 14%;
     margin-left: 25%;
     padding: 20px;
     font-size: 50px;
@@ -20,21 +24,15 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
    
 }
-a{
+ .n{
     font-size: 25px;
     padding-left: 24px;
     text-decoration: none;
     color:var(--primary-color);
-}
+} 
 a:hover{
     color: rgb(139, 17, 143);
     text-decoration:underline;
-}
-img{
-margin-left: 1310px;
-width: 40px;
-height: 40px;
-cursor: pointer;
 }
 :root {
     --primary-color: white;
@@ -44,5 +42,100 @@ cursor: pointer;
     --primary-color: #1b1b1b;
     --secondary-color: white;
   }
-  
-  
+  .header {
+    overflow: hidden;
+    background-color: #f8f9fa;
+    padding: 20px 10px;
+    
+  }
+
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  .header a.logo {
+    font-size: 40px;
+    margin-top: 20px;
+    
+    color: rgba(0,0,0,.9);
+
+  }
+  .header a.head-right {
+    margin-top: 20px;
+}
+  .header a.head-right:hover {
+    background-color: orangered;
+    color: rgb(76, 250, 13);
+  }
+  .header #logo{
+      width: 100px;
+  }
+  .header i{
+      margin-top: 35px;
+    margin-right: 15px;
+      cursor: pointer;
+      color: black;
+  }
+  .header i:hover{
+    color: rgb(76, 250, 13);
+  }
+
+  .header-right {
+    float: right;
+  }
+  #icon{
+    float: right;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 27px;
+}
+footer {
+    color: #fff;
+    background: rgb(104, 102, 102);
+    margin-bottom: 0;
+    font-size: 80%;
+    margin-top: 150px;
+  }
+  .footer-copyright {
+    width: 98.5%;
+    height: 40px;
+    background: rgb(72, 70, 70);
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .footer-body {
+    padding: 30px;
+  }
+  .footer-body > div:first-child {
+    font-size: 150%;
+  }
+  .footer-body ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  .footer-body li > a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 7px;
+  }
+  .aa {
+    color: orangered;
+  }
+  li a:hover {
+    color: orangered;
+    cursor: pointer;
+  }
+  a .aw{
+      font-size: 4px;
+  }
