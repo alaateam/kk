@@ -1,22 +1,375 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8"/>
-    <title>shopping</title>
-    <meta name="description" content="this is our shopping">
-</head>
-<body bgcolor="black">
-    
-    <p id="test">hello</p>
-    <script>
-        function dosomething(){
-            document.getElementById("test").innerHTML="Goodbye";
-        }
-    </script>
-    <h1 style="color: white;">&copy copyright</h1>
-    <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-        Perferendis impedit pariatur quaerat ab laborum,<br>omnis est,<br>
-        in consequatur iusto culpa voluptatibus deleniti<br>obcaecati illo dolore eos exercitationem<br>libero laboriosam inventore!</p>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloud flare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         
-</body>
-</html>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(F:\lovepik-the-image-of-girlsshopping-cards-picture_501157752.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+        .navbar{
+            width: 1200px;
+            height: 75px;
+            margin: auto;
+        }
+        .icon{
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+        .logo{
+            color: rgb(251, 26, 26);
+            font-size: 40px;
+            font-family: Arial;
+            padding-left: 20px;
+            float: left;
+            padding-top: 10px;
+            margin-left: -30px;
+        }
+        .menu{
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li{
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 20px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: azure;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+        ul li a:hover{
+            color: orangered;
+        }
+        .search{
+            width: 330px;
+            float: left;
+            margin-left: 270px;
+        }
+        .srch{
+            font-family: 'Times New Roman';
+            width: 200px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid orangered;
+            margin-top: 13px;
+            color: rgb(253, 252, 252);
+            border-right: none;
+            font-size: 16px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .btn{
+            width: 100px;
+            height: 40px;
+            background: orangered;
+            border: 2px solid orangered;
+            margin-top: 13px;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .btn:focus{
+            outline: none;
+        }
+        .srch:focus{
+            outline: none;
+        }
+        .btn:hover{
+            background-color: rgb(113, 121, 121);
+            border-color:gray ;
+            color:yellow;
+            cursor: pointer;
+        }
+        .srch:hover{
+            border-color: gray;
+        }
+        .content{
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color: #fff;
+            position: relative;
+        }
+        .content .par{
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }
+        .content h1{
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            padding-left: 20px;
+            margin-top: 9%;
+            letter-spacing: 2px;
+        }
+        span{
+            color: orangered;
+        }
+        .content .cn{
+            width: 160px;
+            height: 40px;
+            background-color: orangered;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+        .content .cn a{
+            text-decoration: none;
+            color: black;
+            transition: 0.3 ease;
+        }
+        .cn:hover{
+            background-color: gray;
+        }
+        .form{
+            width: 250px;
+            height: 380px;
+            background: linear-gradient(to top,rgba(44, 40, 40, 0.8),rgba(47, 41, 41, 0.8));
+            position: absolute;
+            top: -20px;
+            left: 870px;
+            border-radius: 10px;
+            padding: 25px;
+        }
+        .form h2{
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: orangered;
+            font-size: 22px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+        .form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid orangered;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+        .form input:focus{
+            outline: none;
+        }
+       ::placeholder{
+           color:#fff;
+           font-family: Arial;
+       }
+       .btnn{
+           width: 240px;
+           height: 40px;background-color: orangered;
+           border: none;
+           margin-top: 30px;
+           font-size: 18px;
+           border-radius: 10px;
+           cursor: pointer;
+           color: #fff;
+           transition: 0.4s ease;
+       }
+       .btnn:hover{
+           background-color: gray;
+           color: yellow;
+
+       }
+       .btnn a{
+           text-decoration: none;
+           color: black;
+           font-weight: bold;
+       }
+       .form .link{
+           font-family: Arial;
+           font-size: 17px;
+           padding-top: 20px;
+           text-align: center;
+       }
+       .form .link a{
+          text-decoration:none ;
+          color: orangered;
+       }
+       .liw{
+           padding-top: 15px;
+           padding-bottom: 10px;
+           text-align: center;
+       }
+       .icons a{
+           text-decoration: none;
+           color: #fff;
+           margin-left: 3px;
+           padding: 9px;
+       }
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </style>
+      <title>W3shank Market</title>
+      </head>
+      <body>
+       <div class="main">
+       <div class="navbar">
+           <div class="icon">
+            <h2 class="logo">W3shank</h2>
+           </div>
+         
+           <div class="menu">
+               <ul>
+                <li><a href="F:\ehappp.html">Feedback</a></li>
+                <li><a href="C:\Users\pc\Desktop\project\Asmaa hosni.html">About</a></li>
+                <li><a href="F:\Eslam services.html">Service</a></li>
+                <li><a href="F:\Asmaa hosni coooo.html">Contact</a></li>
+                
+               </ul>
+           </div>
+           <div class="search">
+              
+               <a href="F:\amany.html"><button class="btn">Search</button></a>
+           </div>
+
+       </div>
+       <div class="content">
+       <h1>Fashionable &<br><span>Brands</span> <br>Trandy</h1>
+       <p class="par">in our market ypu will have what you want without no efforts<span> just jouin us</span><br>all brands you will found here<br>not expensive and in your hand</p>
+
+      <button class="cn"><a href="F:\Eslam my order.html">My order</a></button>
+      <div id="error"></div>
+      <form  id="form" action="/" method="get">
+      <div class="form">
+          <h2>Log In</h2>
+    
+          <input type="email" name="email" placeholder="Your e-mail" required>
+         
+          <input type="password" name="password" placeholder="password" required >
+          <button class="btnn submit"><a href="F:\market2222.html">Login</a></button>
+          <p class="link">Create one<br>
+          <a href="F:\Alaa Hamdi.html">Sign up</a></p>
+          <p class="liw">Log in with</p>
+          
+          <div class="icon">
+
+            <a href="#"><i style="color: #fff;
+                font-size: 30px;
+                padding-top: 14px;
+                padding-top: 5px;
+                padding-right: 10px;
+     " class="fa fa-instagram"></i></a>
+            <a href="#"><i style="color: #fff;
+                font-size: 30px;
+                padding-top: 14px;
+                padding-top: 5px;
+                padding-right: 10px;
+     " class="fa fa-facebook"></i></a>
+            <a href="#"><i style="color: #fff;
+                font-size: 30px;
+                padding-top: 14px;
+                padding-top: 5px;
+                padding-right: 10px;
+     " class="fa fa-twitter"></i></a>
+            <a href="#"><i style="color: #fff;
+                font-size: 30px;
+                padding-top: 14px;
+                padding-top: 5px;
+                padding-right: 10px;
+     " class="fa fa-google"></i></a>
+            <a href="#"><i style="color: #fff;
+                font-size: 30px;
+                padding-top: 14px;
+                padding-top: 5px;
+                padding-right: 10px;
+     " class="fa fa-skype"></i></a>
+     
+          </div>
+
+
+
+
+      </div>
+
+
+
+
+
+       </div>
+       </div>
+    </form></body></html>
+   
