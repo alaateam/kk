@@ -11,6 +11,114 @@
           <link rel="stylesheet" href="htpps://fonts.googleapis.com/css?family=Sofia">
           <link rel="stylesheet" href="style1.css">
           <style>
+              
+              
+              .navbar-brand{
+            font-size: 40px;
+          }
+        .navbar-brand:hover{
+            border-radius: 10%;
+
+        }
+        .nav-link:hover{
+             background-color:orangered;
+             border-radius: 10%;
+        }
+        .dropdown-item:hover{
+            background-color: rgb(31, 228, 163);
+        }
+        .aa img{
+          height: 40%;
+          width: 20px;
+        }
+        .container-fluid{
+        background-color: orangered;
+        }
+        .d-flex{
+          background-color: pink;
+          color: palevioletred;
+        }
+        body{
+          font-family: "Poppins",sans-serif;
+        }
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        h1{
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        h2{
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+        h3{
+          font-size: 1.4rem;
+          font-weight:800 ;
+        }
+        h4{
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+        h5{
+          font-size: 1rem;
+          font-weight: 400;
+          color: #1d1d1d;
+        }
+        h6{
+          color: #080808;
+        }
+        button{
+          font-size: 0.8rem;
+          font-weight: 700;
+          outline: none;
+          border: none;
+          background-color: rgb(26, 22, 23);
+          color: aliceblue;
+          padding: 13px 30px;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        button:hover{
+          background-color:chocolate;
+        }
+       
+        .navbar{
+          font-size: 16px;
+          top: 0;
+          left: 0;
+        }
+        .navbar-light .navbar-nav .nav-link{
+          padding: 0 20px;
+          color: black;
+          transition: 0.3s ease;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar i:hover,
+        .navbar-light .navbar-nav .nav-link .active,
+        .navbar i:active{
+          color:rgb(76, 250, 13);
+        }
+        .navbar i{
+          font-size: 1.2rem;
+          padding: 0 7px;
+          cursor: pointer;
+          font-weight: 500;
+          transition: 0.3s ease;
+        }
+        nav{
+            background-color: antiquewhite;
+        }
+
+
+
+
+              
+              
+              
 .card-row
 {
   display: table-row; 
@@ -40,20 +148,27 @@
     border: none;
     outline:0;
     padding: 12px;
-
+     transform: translateY(20px);
+    opacity: 0;
     color: rgb(208, 108, 1);
     background-color: #000;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-    
+      border-radius: 7px;
+  background-color: orangered;
+}
     margin-left:20px;
 
   }
   
-.card-row button:hover {
-    opacity: 0.7;
+.card-row:hover button {
+     transform: translateY(0px);
+    opacity: 1;
+     
+  background-color: black;
+}
   }
 .Product2
 {
@@ -65,11 +180,15 @@ color: rgb(172, 89, 21);
 }
 .Product2 img
 {
+  transition: 0.3s all;
   display:block;
   width:350px;
   height:400px;
   margin:auto;
   background-color: rgb(192, 74, 15);
+}
+  .Product1:hover img{
+  opacity: 0.7;
 }
 
 .header{
@@ -86,12 +205,51 @@ font-size: 25px;
   color: rgb(0, 0, 0);
   font-size: 22px;
 }
+  .alaa{
+    margin-top: 100px;
+}
 </style>
 
 
 </head>
 <body>
+    
+    
+    
+    
+     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+          
+          <img style="height: 100px;" src="F:\تنزيل (1).png">
+          <a  class="navbar-brand" href="#" > W3shank Market</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-bag"></i>
+              </li>
+             
+          </div>
+        </div>
+      </nav>
 
+<div class="alaa">
     <h2 class="header"> clothes</h2>
     <div class="table">
         
@@ -205,7 +363,7 @@ font-size: 25px;
         
 
         
-    </div>
+</div></div>
 
 </body>
     </html>
