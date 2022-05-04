@@ -140,6 +140,7 @@ body
 footer {
         color: #fff;
         background: rgb(104, 102, 102);
+        margin-top: 15px;
         margin-bottom: 0;
         font-size: 80%;
       }
