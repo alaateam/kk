@@ -164,3 +164,41 @@ body
 {
     float: right;
 }
+footer {
+        color: #fff;
+        background: rgb(104, 102, 102);
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: 80%;
+      }
+      .footer-copyright {
+        height: 40px;
+        background: rgb(72, 70, 70);
+        padding: 10px;
+        bottom: 0px;
+        left: 0px;
+      }
+      .footer-body {
+        padding: 30px;
+      }
+      .footer-body > div:first-child {
+        font-size: 150%;
+      }
+      .footer-body ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+      }
+      .footer-body li > a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 7px;
+      }
+      .aa {
+        color: orangered;
+      }
+      li a:hover {
+        color: orangered;
+        cursor: pointer;
+      }
