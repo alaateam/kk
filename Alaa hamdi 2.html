@@ -80,6 +80,9 @@
         h6{
           color: #080808;
         }
+      .order{
+              margin-right:0%;
+      }
         button{
           font-size: 0.8rem;
           font-weight: 700;
@@ -297,18 +300,18 @@
 <fildset>
   <p> first name:</p>
  
-     <input type="text" name="frist name" placeholder="first name"><br>
+     <input type="text" name="frist name" placeholder="first name" required ><br>
   <p> Last name:</p>
-     <input type="text" name="last name" placeholder="last name"><br>
+     <input type="text" name="last name" placeholder="last name" required><br>
     <p> Phone number:</p>
-     <input type="number" name="phone number" placeholder="Phone number"><br>
+     <input type="number" name="phone number" placeholder="Phone number"required ><br>
 </div>
    
    <div>
    <h2> Billing address:</h2>
    <hr>
   <p>Post code:</p>
-       <input type="number" name="post code" placeholder="number"><br>
+       <input type="number" name="post code" placeholder="number"required ><br>
    </fildset>
   <p> Governorate:<br></p>
     <select name="Governorate">
@@ -343,7 +346,7 @@
   
     <fildest>
      <p>Address:</p>
-      <input type="text" style="height: 60px;"name="address"><br><br>
+      <input type="text" style="height: 60px;"name="address"required ><br><br>
       </div>
       <div>
      <h2> payment method:</h2>
@@ -360,7 +363,7 @@
      <label for="free">visa</label>
      </div>
      </form>
-     <div>
+     <div class="order">
   <h2>   your order:</h2>
      <iframe src="/kk/cart.html"name="iframe_a"style="overflow:scroll" title="craft"></iframe><br>
      </div>
